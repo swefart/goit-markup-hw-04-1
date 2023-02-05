@@ -122,8 +122,8 @@ img {
   padding-bottom: 24px;
 }
 
-.header-item:hover,
-.header-item:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--additional-one-color);
 }
 .address {
