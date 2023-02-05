@@ -170,9 +170,20 @@ img {
 
 .hero-section {
   background-color: var(--main-color);
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../img/bg/people-office-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-title {
@@ -208,6 +219,12 @@ img {
 .features-list {
   display: flex;
   gap: 24px;
+}
+.features-icon-box {
+  padding: 24px 100px;
+  margin-bottom: 8px;
+
+  background-color: var(--additional-two-color);
 }
 .list {
 }
@@ -265,6 +282,9 @@ img {
 .team-member {
   flex-basis: calc((100% - 72px) / 4);
   background-color: var(--additional-three-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-photo {
 }
@@ -279,22 +299,84 @@ img {
   margin-bottom: 8px;
 }
 .team-text {
+  margin-bottom: 8px;
   font-size: var(--main-size);
   line-height: 1.5;
   color: var(--secondary-color);
 }
 
+.social-list {
+  display: flex;
+  gap: 24px;
+  padding: 0 16px;
+}
+.social-box {
+  width: 40px;
+  height: 40px;
+  background-color: var(--brand-color);
+  border-radius: 25px;
+}
+.social-box:hover {
+  background-color: var(--additional-one-color);
+}
+.social-link {
+  display: block;
+  padding: 12px;
+}
+.social-link-icon {
+  fill: var(--additional-three-color);
+}
 /* =========================== /Our team ===========================*/
 
+/* =========================== Customers ===========================*/
+
+.customers-section {
+  padding: 120px 156px;
+}
+.customers-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.customers-item {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.customers-item:hover {
+  border-color: var(--additional-one-color);
+}
+.company-link {
+  padding: 16px 32px;
+}
+.company-link-icon {
+  fill: #8e8f99;
+}
+.company-link-icon:hover {
+  fill: var(--additional-one-color);
+}
+/* =========================== Customers ===========================*/
 /* =========================== Footer ===========================*/
 
 .footer {
   background-color: var(--main-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-container {
+  display: flex;
+  gap: 100px;
+}
+.footer-info {
 }
 
-.footer-info {
+.uppertitle {
+  font-weight: 500;
+  font-size: var(--main-size);
+  line-height: 1.5;
+  color: var(--additional-three-color);
+  padding: 16px 0;
 }
 .logo-footer {
   margin: 0;
@@ -307,6 +389,30 @@ img {
   line-height: 1.5;
   color: var(--additional-four-color);
   max-width: 264px;
+}
+
+.footer-social {
+  padding-right: 534px;
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-box:hover {
+  background-color: #31d0aa;
+}
+.footer-social-link {
+  display: block;
+  padding: 8px;
+}
+.footer-social-link-icon {
+  fill: var(--additional-three-color);
 }
 /* =========================== /Footer ===========================*/
 
@@ -349,6 +455,8 @@ Portfolio
   background-color: var(--additional-one-color);
   color: var(--additional-three-color);
   border-color: var(--additional-one-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* =========================== /Filters btn ===========================*/
@@ -363,6 +471,11 @@ Portfolio
 }
 .results-item {
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.results-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .results-link {
 }
