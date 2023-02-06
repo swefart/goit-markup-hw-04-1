@@ -221,7 +221,11 @@ img {
   gap: 24px;
 }
 .features-icon-box {
-  padding: 24px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  /* padding: 24px 100px; */
   margin-bottom: 8px;
 
   background-color: var(--additional-two-color);
@@ -313,14 +317,17 @@ img {
 .social-box {
   width: 40px;
   height: 40px;
-  background-color: var(--brand-color);
-  border-radius: 25px;
 }
-.social-box:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--additional-one-color);
 }
 .social-link {
   display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--brand-color);
+  border-radius: 50%;
   padding: 12px;
 }
 .social-link-icon {
@@ -339,17 +346,29 @@ img {
   gap: 24px;
 }
 .customers-item {
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
+  width: 168px;
+  height: 88px;
 }
-.customers-item:hover {
+.company-link:hover,
+.company-link:focus {
   border-color: var(--additional-one-color);
 }
 .company-link {
+  display: block;
+  width: 100%;
+  height: 100%;
   padding: 16px 32px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 .company-link-icon {
+  width: 100%;
+  height: 100%;
   fill: #8e8f99;
+}
+.company-link-icon:hover,
+.company-link-icon:focus {
+  fill: var(--additional-one-color);
 }
 .company-link-icon:hover {
   fill: var(--additional-one-color);
@@ -401,15 +420,18 @@ img {
 .footer-social-box {
   width: 40px;
   height: 40px;
-  border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-social-box:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #31d0aa;
 }
 .footer-social-link {
   display: block;
+  width: 100%;
+  height: 100%;
   padding: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-social-link-icon {
   fill: var(--additional-three-color);
